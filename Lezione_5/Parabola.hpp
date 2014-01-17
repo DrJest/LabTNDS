@@ -1,6 +1,6 @@
 #ifndef _Parabola_h_
 #define _Parabola_h_
-#include"FunzioneBase.hpp"
+#include "FunzioneBase.hpp"
 class Parabola: public FunzioneBase {
 public:
   Parabola();
