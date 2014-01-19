@@ -6,9 +6,9 @@
 
 class Solutore {
   public:
-    virtual double CercaZeri(double Xmin,double Xmax, const FunzioneBase* f)=0;
-    void SetPrecisione(double epsilon) { _prec=epsilon; }
-    double GetPrecisione() {return _prec;} 
+    virtual double CercaZeri(double,double, const FunzioneBase*)=0;
+    virtual double Incertezza() const=0;
+    virtual bool Trovato() const=0;
   protected:
     double _a, _b;
     double _prec;

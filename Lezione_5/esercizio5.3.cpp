@@ -10,7 +10,7 @@ double prec = 1e-6;
 Buca bu(0);
 FunzioneBase* t = &(bu);
 Bisezione bis(3000);
-bis.setPrecision(prec);
+bis.Precision(prec);
 double a, b, zero;
 for (int i=0;i<21;++i){
 	a=i*M_PI;

@@ -7,16 +7,16 @@ public:
   Parabola(double a, double b, double c);
   ~Parabola();
   
-  FunzioneBase* A(double);
-  FunzioneBase* B(double);
-  FunzioneBase* C(double);
+  Parabola& A(double);
+  Parabola& B(double);
+  Parabola& C(double);
   
-  double Eval(double) const;
-  double operator () (double) const;
-  
-  double A() const{return _a;}//metodo per accedervi
+  double A() const {return _a;}
   double B() const {return _b;}
   double C() const {return _c;}
+  
+  double Eval(double) const;
+  double operator() (double) const;
   
 private:
   double _a,_b,_c;

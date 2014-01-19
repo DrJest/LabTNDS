@@ -81,7 +81,8 @@ double CorpoCeleste::Campo(const Posizione* r)
 
 void CorpoCeleste::Print() const
 {
-  std::cout << "Corpo Celeste " << _nome << ":\n{\tMassa: " << _m << "\n\tRaggio: " << _raggio << "\n\tPosizione:\n\t{\n\t\tx:" <<
-  _pos->x() << "\nY: " << _pos->y() << "\nZ: " << _pos->z() << "\n}" << std::endl; 
+  std::cout << "Corpo Celeste " << _nome << ": {\n\tMassa: " << _m << "\n\tRaggio: " << _raggio;
+  if(_pos)
+    std::cout << "\n\tPosizione:\n\t{\n\t\tx:" << _pos->x() << "\nY: " << _pos->y() << "\nZ: " << _pos->z();
+   std::cout << "\n}" << std::endl; 
 }
-

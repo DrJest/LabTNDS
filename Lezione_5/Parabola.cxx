@@ -9,24 +9,23 @@ Parabola::Parabola(double a, double b, double c){
 }
 Parabola::~Parabola(){}
 
-FunzioneBase* Parabola::A(double a)
+Parabola& Parabola::A(double a)
 {
   _a=a;
-  return this;
+  return *this;
 }
-  
 
-FunzioneBase* Parabola::B(double b)
+Parabola& Parabola::B(double b)
 {
   _b=b;
-  return this;
+  return *this;
 }
   
 
-FunzioneBase* Parabola::C(double c)
+Parabola& Parabola::C(double c)
 {
   _c=c;
-  return this;
+  return *this;
 }
   
 double Parabola::Eval(double x)const {
