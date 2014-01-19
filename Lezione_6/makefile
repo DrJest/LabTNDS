@@ -28,5 +28,3 @@ esercizio6.2.o: esercizio6.2.cpp
 	$(CC) $< -o $@
 clean:
 	rm -f *~ *.o $(ALL)
-
-
