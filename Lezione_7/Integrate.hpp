@@ -12,7 +12,7 @@ double Trapezi();
 double Trapezi(double nstep);
 
 private:
-double _a, _b, _value, _h;
+double _a, _b, _value, _h, _t;
 int _p, _sign;
 const FunzioneBase* _f;
 };
